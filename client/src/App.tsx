@@ -10,6 +10,7 @@ import DashboardPage from "@/pages/DashboardPage";
 import PetsPage from "@/pages/PetsPage";
 import FavoritesPage from "@/pages/FavoritesPage";
 import AdoptionsPage from "@/pages/AdoptionsPage";
+import AddUserPage from "@/pages/AdduserPage";
 import { AuthProvider } from "@/hooks/useAuth";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
       <Route path="/pets" component={PetsPage} />
       <Route path="/favorites" component={FavoritesPage} />
       <Route path="/adoptions" component={AdoptionsPage} />
+      <Route path="/add-user" component={AddUserPage} />
       <Route component={NotFound} />
     </Switch>
   );
